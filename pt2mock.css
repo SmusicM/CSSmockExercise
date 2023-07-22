@@ -1,0 +1,119 @@
+
+
+
+
+
+button{
+    background-color: blue;  
+    color:azure;
+    width: 100px;
+    height: 35px;
+    border: none;
+    border-radius: 9px;
+    margin-left: 75px;
+    display: inline-block;
+}
+
+button:hover{
+   background-color: darkblue;
+   color: azure;
+   border-radius: 9px;
+   border: none;
+   cursor: pointer;
+}
+hr{
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+div.card{
+    width: 25%;
+    margin: 0 auto;
+    border: 2px solid rgb(224, 228, 235);
+    border-radius: 9px;
+    padding: 5px;
+    box-shadow: -1px -1.5px 1px 3px rgba(116, 136, 148, 0.5);
+    background-color:rgb(224, 228, 235) ;
+
+}
+
+div.img{
+    background-image: url("images/landcruiser.jpg");
+    padding-bottom: 50%;
+    width: 100%;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+    background-size: cover;
+}
+
+h1.title{
+    padding: 10px;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+p.context{
+    border-top: 2px solid rgb(197, 200, 204);
+    padding: 15px;
+    font-size: 15px;
+}
+
+div.giftitles{
+   display: flex;
+   justify-content: space-between;
+}
+
+div.gifpanels{
+    width: 250px;
+    height: 250px;
+    border: 10px solid rgb(212, 45, 3);
+    border-radius: 9px;
+    position: relative;
+    background-color: rgb(212, 45, 3);
+    overflow: hidden; /*this fixed it not being hidden and it showing up before i hover*/
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+div.image-wrapper{
+    height: 100%;
+    width: 100%; 
+    /* size:100%; /*
+    im not sure if i could do it this way i did some extra research and mo better outcomes maybe id have to add more properties like background size to actual img if i did in the long run id have to move top or bottom margin to make fit if i didnnt use height width*/
+    background-size: cover;
+    background-position: center;
+    border-radius: 9px;
+    /* to wrap around image dont be confused with bakcground center*/
+}
+
+div.gif-1{
+    background-image: url(https://media.giphy.com/media/hrajQvEPF07x1KR4vy/giphy-downsized-large.gif);
+}
+
+div.gif-2{
+    background-image: url(https://media.giphy.com/media/Wpycb4BDC2bwFy6QOw/giphy.gif);
+}
+
+div.gif-3{
+    background-image: url(//media.giphy.com/media/nQcdu8TEFXtdzICG50/giphy.gif);
+}
+
+div.caption{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    top: 300px;
+    transition: top 0.5s;
+    position: absolute;
+    text-align: center; 
+    color: white;
+    font-size: 20px;
+    background-color: rgba(3, 28, 44, 0.5);
+    border-radius: 9px;
+    align-items: center;
+}
+
+div.gifpanels:hover div.caption{    /* read captions hover over gif panels */
+    top: 0%;
+}
